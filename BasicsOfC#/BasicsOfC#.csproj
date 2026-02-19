@@ -45,7 +45,14 @@
   <ItemGroup>
     <Compile Include="Enums\ValuesOfDataType.cs" />
     <Compile Include="Enums\Weather.cs" />
+    <Compile Include="Generic\GenericClass.cs" />
+    <Compile Include="inheritance\ImplicitAndExplicitInterfaceImplementation\FirstInterface.cs" />
+    <Compile Include="inheritance\ImplicitAndExplicitInterfaceImplementation\MainClass.cs" />
+    <Compile Include="inheritance\ImplicitAndExplicitInterfaceImplementation\SecondInterface.cs" />
+    <Compile Include="ObjectClass\User.cs" />
+    <Compile Include="Polymorphism\Animal.cs" />
     <Compile Include="inheritance\Car.cs" />
+    <Compile Include="Polymorphism\Cat.cs" />
     <Compile Include="inheritance\Vehicle.cs" />
     <Compile Include="OperatorOverloading\Point.cs" />
     <Compile Include="Program.cs" />
@@ -55,5 +62,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

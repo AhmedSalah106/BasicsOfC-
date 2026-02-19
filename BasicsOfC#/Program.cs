@@ -57,8 +57,8 @@ namespace BasicsOfC_
 
             //-------------Enums-------------------
 
-            
-            Weather weather = Weather.Snowy| Weather.Rainy;
+
+            Weather weather = Weather.Snowy | Weather.Rainy;
             Console.WriteLine(weather); // Output: Snowy, Rainy, because the Weather enum is defined with the [Flags] attribute, which allows us to combine multiple enum values using bitwise operations. When we combine Weather.Snowy and Weather.Rainy using the bitwise OR operator (|), we get a new value that represents both conditions. When we print the weather variable, it will display the combined values as "Snowy, Rainy".
 
 
