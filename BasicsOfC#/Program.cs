@@ -124,6 +124,22 @@ namespace BasicsOfC_
             {
                 Console.WriteLine(group);
             }
+
+
+
+            //----------------------boxing and unboxing----------------------
+
+            // boxing is the process of converting a value type (like int, float, etc.) to an object type (reference type). This is done implicitly by the C# compiler when you assign a value type to an object variable. Unboxing is the reverse process, where you convert an object back to a value type. This requires an explicit cast.
+        
+            int num = 42; // This is a value type (int).
+
+
+            object obj = num; // Boxing: the int value is boxed into an object.
+            Console.WriteLine(obj);
+
+            int unboxedNumber = (int)obj; // Unboxing: the object is unboxed back to an int.
+            Console.WriteLine(unboxedNumber);
         }
+
     }
 }

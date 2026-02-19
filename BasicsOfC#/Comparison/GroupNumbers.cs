@@ -24,7 +24,6 @@ namespace BasicsOfC_.Comparison
                 throw new ArgumentException("Object is not a GroupNumbers");
             }
 
-
             int thisSum = this.numbers.Sum();
             int otherSum = group.numbers.Sum();
             return thisSum.CompareTo(otherSum); // This will return -1, 0, or 1 based on the comparison of sums.
