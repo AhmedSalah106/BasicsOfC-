@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Comparison\GroupNumbers.cs" />
     <Compile Include="Enums\ValuesOfDataType.cs" />
     <Compile Include="Enums\Weather.cs" />
     <Compile Include="Generic\GenericClass.cs" />

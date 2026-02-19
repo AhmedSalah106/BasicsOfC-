@@ -1,4 +1,5 @@
-﻿using BasicsOfC_.Enums;
+﻿using BasicsOfC_.Comparison;
+using BasicsOfC_.Enums;
 using BasicsOfC_.inheritance;
 using BasicsOfC_.inheritance.ImplicitAndExplicitInterfaceImplementation;
 using BasicsOfC_.OperatorOverload;
@@ -107,6 +108,22 @@ namespace BasicsOfC_
 
 
 
+
+            //-----------------Comparison--------------------------
+
+            GroupNumbers[] groupNumbers = new GroupNumbers[]
+            {
+                new GroupNumbers(new int[]{1,2,3}),
+                new GroupNumbers(new int[]{2,3,5}),
+                new GroupNumbers(new int[]{5,4,5}),
+                new GroupNumbers(new int[]{5,6})
+            };
+
+            Array.Sort(groupNumbers);
+            foreach (var group in groupNumbers)
+            {
+                Console.WriteLine(group);
+            }
         }
     }
 }
