@@ -1,5 +1,6 @@
 ﻿using BasicsOfC_.Enums;
 using BasicsOfC_.inheritance;
+using BasicsOfC_.inheritance.ImplicitAndExplicitInterfaceImplementation;
 using BasicsOfC_.OperatorOverload;
 using BasicsOfC_.Reference;
 using System;
@@ -95,6 +96,13 @@ namespace BasicsOfC_
             Console.WriteLine(point3);
 
 
+
+
+            //-----------------implicit and explicit interface implementation-------------------
+            MainClass mainClass = new MainClass();
+            mainClass.Method(); // Output: Method from MainClass, because we are calling the Method directly on the mainClass object, which will invoke the implementation defined in the MainClass.
+            ((FirstInterface)mainClass).Method(); // Output: Method from FirstInterface, because we are explicitly casting the mainClass object to the FirstInterface type, which allows us to access the Method implementation defined in the FirstInterface.
+            ((SecondInterface)mainClass).Method(); // Output: Method from SecondInterface, because we are explicitly casting the mainClass object to the SecondInterface type, which allows us to access the Method implementation defined in the SecondInterface.
 
 
 
